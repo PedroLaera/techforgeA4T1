@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fffaf0;
+  color: #4b5563;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.registration-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.registration-form {
+  background: #ffffff;
+  border: 1px solid #fde68a;
+  border-radius: 16px;
+  padding: 2.5rem;
+
+  box-shadow: 0 10px 25px rgba(234, 179, 8, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+
+  color: #c2410c;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  color: #1f2937;
+
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f97316;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ea580c;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.message-area {
+  margin-top: 1.5rem;
+  padding: 0.85rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: none;
+}
+
+.message-area.success {
+  display: block;
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+.message-area.error {
+  display: block;
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
